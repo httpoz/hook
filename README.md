@@ -14,7 +14,7 @@ composer require httpoz/hooks
 ### Publish
 Run this to publish the package's migrations
 ```
-php artisan vendor:publish --class=HttpOz\Hook\HookServiceProvider
+php artisan vendor:publish --provider="HttpOz\Hook\HookServiceProvider"
 ```
 
 ## Middleware
