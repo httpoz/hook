@@ -5,7 +5,7 @@
     use Closure;
     use HttpOz\Hook\Models\Hook;
     
-    class HookMiddleware
+    class ValidateHookMiddleware
     {
         /**
          * Handle an incoming request.

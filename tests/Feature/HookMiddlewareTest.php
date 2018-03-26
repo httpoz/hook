@@ -2,7 +2,7 @@
     
     namespace HttpOz\Hook\Tests\Feature;
     
-    use HttpOz\Hook\Http\Middleware\HookMiddleware;
+    use HttpOz\Hook\Http\Middleware\ValidateHookMiddleware;
     use HttpOz\Hook\Models\Hook;
     use HttpOz\Hook\Tests\TestCase;
     use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -18,7 +18,7 @@
             $hook = factory(Hook::class)->create(['is_active' => true]);
             
             $request = Request::create("/hooks/{$hook->id}");
-            $middleware = new HookMiddleware();
+            $middleware = new ValidateHookMiddleware();
             
             $response = $middleware->handle($request, function () {});
             
@@ -33,7 +33,7 @@
             $hook = factory(Hook::class)->create(['is_active' => false]);
             
             $request = Request::create("/hooks/{$hook->id}");
-            $middleware = new HookMiddleware();
+            $middleware = new ValidateHookMiddleware();
             
             $response = $middleware->handle($request, function () {});
             $this->assertNotNull($response);
