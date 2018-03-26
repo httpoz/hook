@@ -13,3 +13,4 @@
 
 ### Fixed
 - Fix hook factory
+- Service provider class

@@ -5,7 +5,7 @@
     use Illuminate\Support\ServiceProvider;
     
     
-    class RolesServiceProvider extends ServiceProvider
+    class HookServiceProvider extends ServiceProvider
     {
         
         /**
