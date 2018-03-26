@@ -1,2 +1,2 @@
-[![Build Status](https://travis-ci.org/httpoz/roles.svg)](https://travis-ci.org/httpoz/roles)
-[![codecov](https://codecov.io/gh/httpoz/roles/branch/master/graph/badge.svg)](https://codecov.io/gh/httpoz/roles)
+[![Build Status](https://travis-ci.org/httpoz/lock.svg)](https://travis-ci.org/httpoz/lock)
+[![codecov](https://codecov.io/gh/httpoz/lock/branch/master/graph/badge.svg)](https://codecov.io/gh/httpoz/lock)
