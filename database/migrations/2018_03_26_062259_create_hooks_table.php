@@ -16,6 +16,8 @@ class CreateHooksTable extends Migration
         Schema::create('hooks', function (Blueprint $table) {
             $table->uuid('id');
             $table->primary('id');
+            $table->string('name');
+            $table->text('description')->nullable();
             $table->boolean('is_active');
             $table->timestamps();
         });
