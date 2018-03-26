@@ -6,6 +6,7 @@
 
 ### Added
 - Add changelog
+- Add install instructions to readme
 
 ### Changed
 - Rename HookMiddleware to ValidateHookMiddleware
